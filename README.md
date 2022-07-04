@@ -1,27 +1,18 @@
-# WebcompLazyloadedModule
+# Showcase for a web component and its lazy loaded nested module
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.8.
+## Quick reference
 
-## Development server
+This small showcase is made to showcase the use of lazy loaded modules (and components) inside of web components.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technology
 
-## Code scaffolding
+Everything is standard Angular 13 code, using _@angular/elements_ to create the web component.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Prerequisites
 
-## Build
+`npm` must be installed on your computer and the computer must have an internet connection in order to build the project.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Commands
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`npm install` to download the dependencies
+`npm run start` to start the app

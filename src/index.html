@@ -6,8 +6,25 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    .info {
+      background: pink;
+      padding: 10px;
+    }
+    .webcomp {
+      background: lightcyan;
+      border: 1px dotted cyan;
+      padding: 8px;
+    }
+  </style>
 </head>
 <body>
-  <app-root></app-root>
+  <h1>Webcomp lazyloaded module showcase</h1>
+  <p class="info">This small showcase is made to showcase the use of lazy loaded modules (and components) inside of web components.</p>
+
+  <p>This is the index.html with its web component "my-webcomp":</p>
+  <div class="webcomp">
+  <my-webcomp></my-webcomp>
+  </div>
 </body>
 </html>

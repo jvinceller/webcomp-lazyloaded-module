@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'webcomp-lazyloaded-module';
+
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) {
+    console.log(location.pathname);
+    console.log(this.activatedRoute.snapshot.url);
+    console.log(this.router.url)
+
+    activatedRoute.url.subscribe(url => {
+      console.log(url);
+    })
+
+    if (!activatedRoute.snapshot.component) {
+      router.navigateByUrl(location.pathname);
+    }
+  }
+
+  loadModule() {
+    this.router.navigate(['detail', 3]);
+  }
 }
